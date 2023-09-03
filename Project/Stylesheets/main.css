@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:sans-serif;
+}
+
+#top {
+    position: relative;
+}
+
+#top .contain {
+    position: absolute;
+    display: flex;
+    left: 22%;
+    align-items: center;
+    z-index: 1;
+    top: 10vh;
+    opacity: 0.9;
+}
+
+.company-logo {
+    width: 10%;   
+}
+
+.company-logo img {
+    border-radius: 50%;
+}
+
+nav ul li {
+    display: inline-block;
+    order: 0;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+
+nav ul li:hover {
+    background-color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+nav {
+    border: 1px solid;
+    margin-left: 3%; 
+    background-color: rgb(200, 200, 200);  
+}
+
+footer .sponsors {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    background-color: rgb(200, 200, 200);
+}
+
+
+footer .sponsors .other-companies {
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .sponsors .other-companies div{
+    background-color: black;
+    width: 5%;
+    height: 50%;
+}
+
+footer .sponsors .company-img img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+footer .sponsors .social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .sponsors .social-links div {
+    margin-right: 50px;
+}
+
+footer .sponsors .company-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+footer .bottom {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer .bottom p {
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 150%;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Donations Page</title>
+        <head>
+            <link rel = "stylesheet" href = "Stylesheets/main.css">
+
+            <style>
+                #top{
+                    height: 50vh;
+                    background-color: rgb(245, 245, 245);
+                }
+
+                section {
+                    background-color:rgb(174, 176, 177);
+                    padding-left: 22%;
+                    padding-right: 22%;
+                    text-align: justify;
+                }
+
+                section h1 {
+                    font-size: 400%;
+                    font-weight: lighter;
+                }
+
+                section p {
+                    font-size: 120%;
+                }
+
+                section form {
+                    background-color: rgb(197, 197, 197);
+                    padding: 3%;
+                }
+
+                section form button:active {
+                    background-color: black;
+                }
+
+                section h2 {
+                    border-bottom: 1px solid;
+                }
+
+                section label {
+                    display: block;
+                    margin-top: 3%;
+                }
+
+                section form .donation-type {
+                    background-color: white;
+                    margin-left: -1%;
+                    font-size: xx-large;
+                    padding: 2%;
+                }
+
+                section form .donation-amount {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                }
+                
+                section form .donation-amount input {
+                    background-color: #9c9797;
+                    margin: 20px;
+                    padding: 20px;
+                    width: 60%;
+                    color: black;
+                    text-align: center;
+                    font-size: large;
+                }
+                section form .donation-amount #other {
+                    background-color: white;
+                    width: 50%;
+                    height: 25%;
+                }
+                
+
+                section form .donation-amount [type="button"]:hover,
+                section form .donation-amount [type="button"]:focus {
+                    background-color: black;
+                    color: white;
+                }
+
+                section form .donation-type:hover,
+                section form .donation-type:focus {
+                    background-color: black;
+                    color: white;
+                }
+
+                section form input[type = "number"] {
+                    height: 40px;
+                    font-size: large;
+                }
+
+                section form input[type = "text"] {
+                    height: 50px;
+                    width: 300px;
+                    font-size: large;
+                }
+
+                section form input[type = "email"] {
+                    font-size: medium;
+                    height: 30px;
+                    width: 300px;
+                }
+
+                section form input[type = "submit"] {
+                    font-size: xx-large;
+                    margin-left: 35%;
+                    background-color: black;
+                    color: white;
+                    width: 200px;
+                    padding: 3%;
+                }
+
+            </style>
+        </head>
+    </head>
+    <body>
+        <header id = "top">
+            <div class = "contain">
+                <div class = "company-logo">
+                    <img src = "Images\zoo-logo.png" alt = "Company Logo" width = "100%">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href = "index.html">HOME</a></li>
+                        <li><a href = "animals.html">ANIMALS</a></li>
+                        <li><a href = "merch.html">MERCH</a></li>
+                        <li><a href = "contact-us.html">CONTACT US</a></li>
+                        <li><a href = "about.html">ABOUT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section>
+            <h1>MAKE YOUR GIFT</h1>
+            <hr>
+            <p>
+                Every day, our Zoo saves animals and creates lifelong memories that inspire people to conserve the natural 
+                world. Every gift, large or small, helps the zoo build a better community – your community. Thank you for 
+                investing in a more sustainable future for wildlife
+            </p>
+            <form>
+                <h2>DONATION DETAILS</h2>
+                
+                <label>DONATION TYPE</label><br>
+
+                <input type = "button" value="ONE-TIME" class = "donation-type">
+                <input type = "button" value="RECURRING" class = "donation-type">
+                
+
+                <br>
+
+                <label> DONATION AMOUNT</label><br>
+                <div class = "donation-amount">
+                    <div>
+                        <input type = "button" value = "100">
+                    </div>
+
+                    <div>
+                        <input type = "button" value = "200">
+                    </div>
+                    
+                    <div>
+                        <input type = "button" value = "400">
+                    </div>
+
+                    <div>
+                        <input type = "button" value = "500">
+                    </div>
+
+                    <div>
+                        <input type = "button" value = "1000">
+                    </div>
+
+                    <div>
+                        <input type = "button" value = "2000">
+                    </div>
+
+                    <div>
+                        <input type = "button" value = "5000">
+                    </div>
+
+                    <div>
+                        <input type = "button" value = "10000">
+                    </div>
+
+                    <div>
+                        <input type = "number" placeholder = "Other" id = "other">
+                    </div>
+                </div>
+                <label>DESIGNATION</label>
+                <br>
+                <input type = text  list = "designation" name = "designation" placeholder="GREATEST AREA OF NEED">
+                <datalist id = "designation">
+                    <option value="Food"></option>
+                    <option value="research"></option>
+                    <option value="Shelter"></option>
+                </datalist>
+                <br>
+
+                <label>Email</label>
+                <input type = "email" name = "email-ad" required>
+
+                <br><br><br>
+
+                <input type = "submit">
+            </form>
+        </section>
+
+        <footer>
+            <div class = "sponsors">
+                
+                <div class = "other-companies">
+                    <p>Partners</p>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class = "company-img">
+                    <img src = "Images/zoo-logo.png">
+                </div>
+                <div class = "social-links">
+                    <div><a href = "https://www.instagram.com" target = "_blank"><img src = "Images/instagram-icon.png" ></a></div>
+                    <div><a href = "https://www.facebook.com" target = "_blank"><img src = "Images/facebook-icon.png" ></a></div>
+                    <div><a href = "https://www.youtube.com" target = "_blank"><img src = "Images/youtube-icon.png"></a></div>
+                    <div><a href = "https://www.gmail.com" target = "_blank"><img src = "Images/gmail-icon.png"></a></div>
+                    <div><a href = "https://www.linkedin.com" target = "_blank"><img src = "Images/linkedin-icon.png"></a></div>
+                </div>
+            </div>
+
+            <div class = "bottom">
+                <p>&copy;</p>
+                <p>ZOO Company</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
